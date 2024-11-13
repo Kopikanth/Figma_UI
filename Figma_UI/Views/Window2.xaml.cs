@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Figma_UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Figma_UI
         public Window2()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

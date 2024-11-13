@@ -39,7 +39,8 @@
         <Grid x:Name="Sub" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="580"/>
-                <ColumnDefinition Width="900"/>
+                <ColumnDefinition Width="326"/>
+                <ColumnDefinition Width="574"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
@@ -72,7 +73,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    
+
 
                     <!--<ComboBox Margin="5" BorderThickness="0">
                         <ComboBox.Clip>
@@ -82,7 +83,7 @@
                         <ComboBoxItem/>
                         <ComboBoxItem/>
                     </ComboBox>-->
-                    
+
                     <DatePicker Grid.Row="1" Margin="5"/>
                     <ComboBox Grid.Column="1" Margin="5">
                         <ComboBoxItem/>
@@ -109,84 +110,84 @@
             </StackPanel>
 
             <!--<Border Grid.Column="1" Height="820" Width="900" BorderBrush="Black" BorderThickness="1">-->
-                <StackPanel Grid.Column="1" Margin="16,5,16,16" >
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="#A4A4A4" FontSize="14" VerticalAlignment="Center" Padding="25,0,0,0" Text="Search Product name / Category name" Background="#F1F3F4" BorderThickness="0" Width="396" Height="50" Margin="0,0,8,0">
-                            <TextBox.Clip>
-                                <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,396,50"/>
-                            </TextBox.Clip>
-                        </TextBox>
-                        <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="#A4A4A4" FontSize="14" VerticalAlignment="Center" Padding="25,0,0,0" Text="Search by SKU / Scan bar code" Background="#F1F3F4" BorderThickness="0" Width="396" Height="50" Margin="0,0,8,0">
-                            <TextBox.Clip>
-                                <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,396,50"/>
-                            </TextBox.Clip>
-                        </TextBox>
-                        <Button Background="#2B80EC" FontWeight="Bold" FontSize="18" Width="50" Margin="2" Height="50" Style="{StaticResource RoundedButtonStyle}">
-                            <Button Width="24" Height="24" Background="Transparent" BorderBrush="Transparent">
-                                <Grid>
-                                    <Ellipse Width="20" Height="20" Stroke="White" StrokeThickness="2"/>
-                                    <Rectangle Fill="White" Width="2" Height="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    <Rectangle Fill="White" Width="10" Height="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Grid>
-                            </Button>
+            <StackPanel Grid.Column="1" Margin="16,5,16,16" Grid.ColumnSpan="2" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="#A4A4A4" FontSize="14" VerticalAlignment="Center" Text="Search Product name / Category name" Background="#F1F3F4" BorderThickness="0" Width="396" Margin="0,0,8,0" Height="55">
+                        <TextBox.Clip>
+                            <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,396,50"/>
+                        </TextBox.Clip>
+                    </TextBox>
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="#A4A4A4" FontSize="14" VerticalAlignment="Center" Padding="25,0,0,0" Text="Search by SKU / Scan bar code" Background="#F1F3F4" BorderThickness="0" Width="396" Height="50" Margin="0,0,8,0">
+                        <TextBox.Clip>
+                            <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,396,50"/>
+                        </TextBox.Clip>
+                    </TextBox>
+                    <Button Background="#2B80EC" FontWeight="Bold" FontSize="18" Width="50" Margin="2" Height="50" Style="{StaticResource RoundedButtonStyle}">
+                        <Button Width="24" Height="24" Background="Transparent" BorderBrush="Transparent">
+                            <Grid>
+                                <Ellipse Width="20" Height="20" Stroke="White" StrokeThickness="2"/>
+                                <Rectangle Fill="White" Width="2" Height="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Rectangle Fill="White" Width="10" Height="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
                         </Button>
-                    </StackPanel>
-                    <Rectangle Height="1" Width="860" HorizontalAlignment="Left" Fill="#D9D9D9" Margin="3,10"/>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="210"/>
-                            <ColumnDefinition Width="700"/>
-                        </Grid.ColumnDefinitions>
-                        <StackPanel HorizontalAlignment="Left">
-                            <Button Content="All Category" Background ="#FFAD46" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Kottu Rotti" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Fried Rice" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Noodles" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Burger" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Briyani" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Soup" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Drinks" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Appetizers" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Salads" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                            <Button Content="Short Eats" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
-                        
-                        </StackPanel>
-                        <Grid Grid.Column="1">
-                            <ItemsControl ItemsSource="{Binding ImageItems}">
-                                <ItemsControl.ItemsPanel>
-                                    <!-- Use a WrapPanel to automatically wrap items into rows -->
-                                    <ItemsPanelTemplate>
-                                        <WrapPanel Orientation="Horizontal"/>
-                                    </ItemsPanelTemplate>
-                                </ItemsControl.ItemsPanel>
-
-                                <ItemsControl.ItemTemplate>
-                                    <!-- Define how each item should appear -->
-                                    <DataTemplate>
-                                        <StackPanel Margin="4">
-                                            <Border Background="#F1F3F4" Width="154" Height="173" CornerRadius="5" ClipToBounds="True">
-                                                <StackPanel Margin="4">
-                                                    <Border Width="146" Height="122" CornerRadius="5" ClipToBounds="True">
-                                                        <Image Source="{Binding ImageSource}" Stretch="Fill">
-                                                            <Image.Clip>
-                                                                <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,146,122"/>
-                                                            </Image.Clip>
-                                                        </Image>
-                                                    </Border>
-                                                    <TextBlock Text="{Binding Text1}" FontWeight="Medium" FontFamily="Inter" FontSize="15" HorizontalAlignment="Center"/>
-                                                    <TextBlock Text="{Binding Text2}" FontWeight="Bold" FontSize="15" HorizontalAlignment="Center"/>
-                                                </StackPanel>
-                                            </Border>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ItemsControl>
-                        </Grid>
-                    </Grid>
+                    </Button>
                 </StackPanel>
+                <Rectangle Height="1" Width="860" HorizontalAlignment="Left" Fill="#D9D9D9" Margin="3,10"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="700"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Left">
+                        <Button Content="All Category" Background ="#FFAD46" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Kottu Rotti" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Fried Rice" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Noodles" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Burger" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Briyani" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Soup" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Drinks" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Appetizers" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Salads" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+                        <Button Content="Short Eats" Background ="#F1F3F4" FontWeight="Bold" FontSize="18" Width="200" Height="60" Style="{StaticResource RoundedButtonStyle}"/>
+
+                    </StackPanel>
+                    <Grid Grid.Column="1">
+                        <ItemsControl ItemsSource="{Binding ImageItems}">
+                            <ItemsControl.ItemsPanel>
+                                <!-- Use a WrapPanel to automatically wrap items into rows -->
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <!-- Define how each item should appear -->
+                                <DataTemplate>
+                                    <StackPanel Margin="4">
+                                        <Border Background="#F1F3F4" Width="154" Height="173" CornerRadius="5" ClipToBounds="True">
+                                            <StackPanel Margin="4">
+                                                <Border Width="146" Height="122" CornerRadius="5" ClipToBounds="True">
+                                                    <Image Source="{Binding ImageSource}" Stretch="Fill">
+                                                        <Image.Clip>
+                                                            <RectangleGeometry RadiusX="5" RadiusY="5" Rect="0,0,146,122"/>
+                                                        </Image.Clip>
+                                                    </Image>
+                                                </Border>
+                                                <TextBlock Text="{Binding Text1}" FontWeight="Medium" FontFamily="Inter" FontSize="15" HorizontalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Text2}" FontWeight="Bold" FontSize="15" HorizontalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </Grid>
+            </StackPanel>
             <!--</Border>-->
 
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="3">
                 <StackPanel>
                     <TextBlock FontWeight="Bold" FontSize="30" Text="Running Orders" Margin="0,0,0,5"/>
                     <Grid>
@@ -312,7 +313,7 @@
                                 <TextBlock FontSize="20" FontWeight="bold" Text="Take away" Height="30"/>
                                 <TextBlock FontSize="15" Text="Type" Height="30"/>
                             </StackPanel>
-                        </Grid> 
+                        </Grid>
                     </Grid>
                     <Grid Margin="0,10,0,0">
                         <Grid.RowDefinitions>
@@ -327,7 +328,7 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Button Content="7" Margin="3" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
+                        <Button Content="7" Margin="3" FontSize="30" Foreground="Black" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
@@ -362,7 +363,8 @@
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                        </Button><Button Grid.Row="1" Margin="3" Content="4" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
+                        </Button>
+                        <Button Grid.Row="1" Margin="3" Content="4" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
@@ -397,7 +399,8 @@
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                        </Button><Button Grid.Row="2" Margin="3" Content="1" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
+                        </Button>
+                        <Button Grid.Row="2" Margin="3" Content="1" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
@@ -432,7 +435,8 @@
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                        </Button><Button Grid.Row="3" Margin="3" Content="0" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
+                        </Button>
+                        <Button Grid.Row="3" Margin="3" Content="0" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
@@ -458,7 +462,8 @@
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                        </Button><Button Grid.Column="1" Margin="3" Content="8" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
+                        </Button>
+                        <Button Grid.Column="1" Margin="3" Content="8" FontSize="30" FontWeight="Bold" Width="93.67" Height="93.67" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE6E6E6" BorderThickness="1" BorderBrush="#FFB7B7B7">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
@@ -469,9 +474,9 @@
                         </Button>
 
                     </Grid>
-                    
+
                 </StackPanel>
-                
+
             </Grid>
         </Grid>
 
@@ -486,7 +491,7 @@
             <Button Width="50" Height="50" Background="#FFAD46" Margin="10" Style="{StaticResource RoundedButtonStyle}"/>
             <Button Width="241.25" Height="50" Content="Recent Transactions" FontSize="17" Background="White" Margin="10" Style="{StaticResource RoundedButtonStyle}"/>
             <Button Width="223.75" Height="50" Content="Add Expence" FontSize="17" Background="White" Margin="10" Style="{StaticResource RoundedButtonStyle}"/>
-            
+
         </StackPanel>
 
     </Grid>
